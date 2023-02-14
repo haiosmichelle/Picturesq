@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.picturesq.Controller">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@style2.css">
+            <effect>
+                <DropShadow>
+                    <color>
+                        <Color red="0.8666666746139526" green="0.8470588326454163" blue="0.8470588326454163" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <children>
+                <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="23.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@filter.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#7d6e83" layoutX="72.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Picturesq" wrappingWidth="152.21630859375">
+                    <font>
+                        <Font name="Arial Black" size="21.0" />
+                    </font>
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Text>
+                <VBox alignment="CENTER" layoutY="54.0" prefHeight="532.0" prefWidth="250.0">
+                    <children>
+                  <ImageView fx:id="Pofile" fitHeight="169.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" styleClass="rect-round" />
+                  <VBox prefHeight="40.0" prefWidth="250.0" />
+                  <Label fx:id="Name" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="195.0" styleClass="tf_box" stylesheets="@style.css" textAlignment="CENTER" textFill="#7d6e83" textOverrun="CLIP" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Bodoni 72 Oldstyle Book" size="22.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="32.0" prefWidth="250.0" />
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" styleClass="buttons" stylesheets="@style2.css" text="Feed" textFill="#7d6e83">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@home-3.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Apple Color Emoji" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" styleClass="buttons" stylesheets="@style2.css" text="Explore" textFill="#7d6e83">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@search.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Apple Color Emoji" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" styleClass="buttons" stylesheets="@style2.css" text="Notifications" textFill="#7d6e83">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@notification.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Apple Color Emoji" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" styleClass="buttons" stylesheets="@style2.css" text="Profile" textFill="#7d6e83">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@user-4.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Apple Color Emoji" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox layoutX="-4.0" layoutY="536.0" prefHeight="65.0" prefWidth="257.0" />
+            </children>
+        </Pane>
+        <Button fx:id="AddBtn" contentDisplay="RIGHT" layoutX="277.0" layoutY="23.0" minHeight="0.0" mnemonicParsing="false" onAction="#AddBtnOnAction" prefHeight="35.0" prefWidth="127.0" stylesheets="@style2.css" text="ADD POST" textFill="#7d6e83">
+            <styleClass>
+                <String fx:value="rect-round" />
+                <String fx:value="shadow" />
+                <String fx:value="whit_background" />
+                <String fx:value="buttons" />
+            </styleClass>
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Bodoni 72 Oldstyle Book" size="16.0" />
+            </font>
+        </Button>
+      <Pane layoutX="717.0" layoutY="17.0" prefHeight="47.0" prefWidth="266.0">
+         <styleClass>
+            <String fx:value="whit_background" />
+            <String fx:value="rect-round" />
+            <String fx:value="shadow" />
+            <String fx:value="col" />
+         </styleClass>
+         <children>
+            <TextField layoutX="8.0" layoutY="11.0" prefHeight="26.0" prefWidth="181.0" promptText="Search" stylesheets="@style.css">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="white-pane" />
+                  <String fx:value="rect-round" />
+               </styleClass>
+            </TextField>
+            <Button layoutX="206.0" layoutY="8.0" minWidth="51.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="51.0" stylesheets="@style2.css" textFill="#7d6e83">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@magnifying-glass.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="buttons" />
+                  <String fx:value="lblIcon" />
+                  <String fx:value="rect-round" />
+               </styleClass>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@style2.css" />
+            <URL value="@style.css" />
+         </stylesheets>
+      </Pane>
+      <ScrollPane layoutX="312.0" layoutY="116.0" pannable="true" prefHeight="484.0" prefWidth="712.0" style="-fx-background-color: #D0B8A8;">
+         <content>
+            <GridPane fx:id="postGrid" styleClass="primary-color">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+            </GridPane>
+         </content>
+         <stylesheets>
+            <URL value="@style2.css" />
+            <URL value="@style.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="rect-round2" />
+         </styleClass>
+      </ScrollPane>
+      <Text fill="#7d6e83" layoutX="264.0" layoutY="101.0" strokeWidth="0.0" styleClass="parent" text="Feed" underline="true" wrappingWidth="152.21630859375">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Book" size="28.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+    </children>
+</AnchorPane>

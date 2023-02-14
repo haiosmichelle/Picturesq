@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vbox" fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.picturesq.regController" >
+   <children>
+      <Group>
+         <children>
+            <ImageView fitHeight="480.0" fitWidth="480.0">
+               <image>
+                  <Image url="@v1016-c-08_1-ksh6mza3.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="163.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" layoutX="37.0" layoutY="213.0" prefHeight="39.0" prefWidth="398.0" styleClass="tf_box" stylesheets="@style.css">
+               <children>
+                  <TextField id="email" fx:id="email" prefHeight="27.0" prefWidth="367.0" promptText="Email" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="37.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                  </ImageView>
+
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="37.0" layoutY="269.0" prefHeight="39.0" prefWidth="398.0" styleClass="tf_box" stylesheets="@style.css">
+               <children>
+                  <PasswordField id="pass" fx:id="pass" promptText="Password" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <ImageView fitHeight="37.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@lock-3.png" />
+                     </image>
+                  </ImageView>
+
+               </children>
+            </HBox>
+            <Button layoutX="41.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnRegisterssetOnAction" prefHeight="41.0" prefWidth="390.0" styleClass="blue-btn" stylesheets="@style.css" text="Sign in" />
+            <Label fx:id="mesaj" layoutX="59.0" layoutY="410.0" prefHeight="18.0" prefWidth="354.0" styleClass="tf-box" stylesheets="@style.css" textFill="#f5f5f5">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </children>
+</VBox>

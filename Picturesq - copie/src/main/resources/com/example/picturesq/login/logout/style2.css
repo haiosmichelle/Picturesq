@@ -1,0 +1,56 @@
+.parent{
+-fx-background-color:#F8EDE3;
+}
+.sidebar{
+-fx-background-color:#DFD3C3;
+}
+.icons{
+-fx-fill:#CCD0D3;
+}
+.icons:hover{
+-fx-fill:#98A0A6;
+}
+.buttons{
+-fx-background-color:transparent;
+}
+.buttons:hover{
+-fx-background-color:transparent;
+-fx-border-radius:0px;
+-fx-background-color:#E33461;
+-fx-border-width:3px;
+-fx-border-radius:0px;
+-fx-border-radius:0px 0px 0px 3px;
+}
+.lblIcon{
+-fx-background-color:#7d6e83;
+}
+.whit_background{
+    -fx-background-color: #fff;
+}
+
+.primary-color{
+    -fx-background-color: #D0B8A8;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+}
+
+.rect-round{
+    -fx-background-radius: 10;
+}
+.rect-round2{
+    -fx-background-radius: 30;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.selected{
+    -fx-background-color: #F4F5F9;
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #EFEFEF;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.picturesq.PostController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <ImageView fx:id="postImage" fitHeight="365.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@poz.jpeg" />
+               </image>
+               <styleClass>
+                  <String fx:value="rect-round2" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </ImageView>
+         </top>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </BorderPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="username" layoutX="48.0" layoutY="13.0" prefHeight="17.0" prefWidth="99.0" styleClass="tf_box" text="Antonia Varan" textFill="#7d6e83">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="profileImage" fitHeight="34.0" fitWidth="34.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="rect-round2" AnchorPane.leftAnchor="8.0">
+               <image>
+                  <Image url="@Aesthetic-Profile-Pictures-Transparent-Image.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="data" alignment="TOP_LEFT" layoutX="50.0" layoutY="34.0" prefHeight="21.0" prefWidth="96.0" text=" 4 DAYS AGO" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="likes" layoutX="233.0" layoutY="22.0" prefHeight="21.0" prefWidth="40.0" text="45k" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="comment" layoutX="325.0" layoutY="22.0" prefHeight="21.0" prefWidth="40.0" text="100k" AnchorPane.bottomAnchor="22.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLikes" layoutX="204.0" layoutY="13.0" mnemonicParsing="false" onAction="#BtnLikesOnAction" prefHeight="34.0" prefWidth="40.0" styleClass="buttons">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@heart.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="buttons" />
+                     </styleClass>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnComments" layoutX="275.0" layoutY="13.0" mnemonicParsing="false" onAction="#BtnCommentsOnAction" prefHeight="34.0" prefWidth="34.0" styleClass="buttons" AnchorPane.leftAnchor="280.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@comments.png" />
+                     </image>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="buttons" />
+                     </styleClass>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@style2.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="rect-round" />
+      <String fx:value="whit_background" />
+   </styleClass>
+</VBox>
